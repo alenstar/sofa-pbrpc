@@ -111,7 +111,7 @@ $(BIN): $(LIB) $(BIN_OBJ)
 	$(CXX) $(BIN_OBJ) -o $@ $(LIB) $(LDFLAGS)
 
 %.pb.cc %.pb.h: %.proto
-	${PROTOBUF_DIR}/bin/protoc --proto_path=./src --proto_path=${PROTOBUF_DIR}/include --cpp_out=./src $<
+	/usr/bin/protoc --proto_path=./src --proto_path=${PROTOBUF_DIR}/include --cpp_out=./src $<
 
 %.o: %.cc
 	$(CXX) $(CXXFLAGS) -c $< -o $@
