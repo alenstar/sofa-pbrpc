@@ -30,3 +30,8 @@ bazel-genfiles
 bazel-out
 bazel-sofa-pbrpc
 bazel-testlogs
+
+.vscode
+.vs
+.idea
+.build
